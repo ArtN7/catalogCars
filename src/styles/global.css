@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.btn{
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    min-width: 100px;
+}
+.btn:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
