@@ -14,7 +14,7 @@
 .listItem{
     border: 1px solid red;
     margin: auto;
-    max-height: 500px;
+    min-height: 500px;
     width: 700px;
 }
 .image{
