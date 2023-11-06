@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import styles from './Main.module.css'
 import CarItem from './car-item/CarItem.jsx';
 import {cars as carsData} from './cars.data.js';

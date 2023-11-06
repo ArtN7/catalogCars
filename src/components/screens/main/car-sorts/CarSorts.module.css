@@ -10,3 +10,7 @@
     outline: none;
     border: none;
 }
+.btn:hover {
+    cursor:pointer;
+    background-color: lightgreen;
+}

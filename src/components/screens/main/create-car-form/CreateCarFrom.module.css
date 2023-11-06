@@ -12,3 +12,8 @@
 .form input:focus{
     border: 1px solid green;
 }
+.btnGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
