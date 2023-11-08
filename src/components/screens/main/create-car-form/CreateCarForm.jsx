@@ -2,7 +2,8 @@ import { useState } from 'react';
 import styles from './CreateCarFrom.module.css'
 import  '../../../../styles/global.css'
 import {cars} from '../cars.data.js'
-import {defaultCars} from '../cars.data.js'
+import {defaultCars} from '../cars.data.js';
+// const carsBD = require('../bd.js');
 const clearData = {
     name: '',
     price: '',
@@ -21,7 +22,7 @@ const CreateCarForm = ({setCars}) => {
         ])
         cars.push({
             id: cars.length + 1,
-            ...data,
+                ...data,
         })
         setData(clearData);
     }
@@ -29,8 +30,17 @@ const CreateCarForm = ({setCars}) => {
         e.preventDefault();
         setCars(() => [...defaultCars]);
         cars.splice(defaultCars.length, cars.length);
-        console.log(cars);
         
+    }
+    const removeLastAdded = (e) => {
+        e.preventDefault();
+        if (cars.length > defaultCars.length){
+            cars.pop({
+                id: cars.length,
+                ...data,
+            })
+        }
+        setCars(() => [...cars]);
     }
 
     return(
@@ -43,6 +53,7 @@ const CreateCarForm = ({setCars}) => {
             <div className = {styles.btnGroup}>
                 <button className='btn' onClick={e => createCar(e)}>Create</button>
                 <button className='btn' onClick={e => removeAddedCars(e)}>Remove added cars</button>
+                <button className='btn' onClick={e => removeLastAdded(e)}>Remove last added car</button>
             </div>
         </form>
     )
