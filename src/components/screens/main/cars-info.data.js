@@ -1,0 +1,42 @@
+export const carsInfo = [
+    {
+        id: 1,
+        description: 'G63. Without words.',
+        imageEngine: '',
+        descriptionEngine: 'eng',
+        imageInterior: '',
+        descriptionInterior: 'inter',
+        imageExterior: '',
+        descriptionExterior: 'exter',
+    },
+    {
+        id: 2,
+        description: 'BMW M3. Style. Street. Speed.',
+        imageEngine: '',
+        descriptionEngine: 'eng',
+        imageInterior: '',
+        descriptionInterior: 'inter',
+        imageExterior: '',
+        descriptionExterior: 'exter',
+    },
+    {
+        id: 3,
+        description: 'Lamborghini. Faster than the others.',
+        imageEngine: '',
+        descriptionEngine: 'eng',
+        imageInterior: '',
+        descriptionInterior: 'inter',
+        imageExterior: '',
+        descriptionExterior: 'exter',
+    },
+    {
+        id: 4,
+        description: 'McLaren. Acceleration. Power. Controllability.',
+        imageEngine: '',
+        descriptionEngine: 'eng',
+        imageInterior: '',
+        descriptionInterior: 'inter',
+        imageExterior: '',
+        descriptionExterior: 'exter',
+    }
+]

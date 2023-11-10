@@ -6,7 +6,6 @@ body{
     text-align: center;
     background-color: black;
     color: aliceblue;
-    margin-top: 20px;
 }
 .btn{
     padding: 5px 20px;
@@ -18,4 +17,8 @@ body{
 .btn:hover{
     background-color: lightgreen;
     cursor: pointer;
+}
+.link {
+    text-decoration: none;
+    color: black;
 }

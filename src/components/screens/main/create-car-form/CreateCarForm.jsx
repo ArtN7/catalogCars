@@ -3,7 +3,6 @@ import styles from './CreateCarFrom.module.css'
 import  '../../../../styles/global.css'
 import {cars} from '../cars.data.js'
 import {defaultCars} from '../cars.data.js';
-// const carsBD = require('../bd.js');
 const clearData = {
     name: '',
     price: '',

@@ -1,18 +1,25 @@
 {
-  "name": "react_project_cars",
-  "version": "0.1.0",
+  "name": "cars_catalog",
+  "version": "1.1.0",
   "private": true,
   "homepage": "https://artn7.github.io/catalogCars/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.2.0",
     "gh-pages": "^6.0.0",
+    "mysql": "^2.18.1",
     "mysql2": "^3.6.3",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
+    "timers-browserify": "^2.0.12",
+    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,9 +48,17 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "resolve": {
+    "fallback": {
+      "crypto": false,
+      "timers": false,
+      "stream": false,
+      "zlib": false
+    }
+  },
+  "description": "This my first project on react js. Carsatalog",
   "main": "index.js",
-  "author": "",
+  "author": "ArtN7",
   "license": "ISC",
   "devDependencies": {
     "source-map-loader": "^4.0.1"

@@ -1,7 +1,7 @@
 
 import styles from '../Main.module.css'
 const CarItem = ({car}) => {
-    
+    const link = `catalogCars/car/${car.id}`;
     return (
         <div key={car.id} className={styles.listItem}>
             <div className={styles.image} style={{
@@ -12,7 +12,7 @@ const CarItem = ({car}) => {
                 <p>{new Intl.NumberFormat('en-US', {
                     style: 'currency', currency: 'USD',
                 }).format(car.price)}</p>   
-                <button className='btn'><a>Read More</a></button>  
+                <a href={link} className = 'link'><button className='btn'>Read More</button></a>
             </div>
         </div>
     )

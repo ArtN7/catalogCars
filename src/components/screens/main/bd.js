@@ -14,12 +14,12 @@ connection.connect(function(err){
     else{
       console.log("Подключение к серверу MySQL успешно установлено");
     }
- });
+});
 
 const sql ='SELECT * FROM cars'; 
 
 connection.query(sql, function(err, results) {
     if(err) console.log(err);
-    module.exports.data = results;
+    module.exports = results;
 });
 connection.end();
