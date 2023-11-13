@@ -7,7 +7,6 @@ import CarSorts from './car-sorts/CarSorts.jsx';
 import CarSearch from './car-search/CarSearch.jsx';
 // const carsBD = require('./bd.js');
 const Main = () => {
-
     const [cars, setCars] = useState(carsData);
     return (
         <div>

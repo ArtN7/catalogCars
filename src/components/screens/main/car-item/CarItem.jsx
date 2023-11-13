@@ -1,7 +1,8 @@
 
-import styles from '../Main.module.css'
+import {useNavigate } from 'react-router-dom';
+import styles from './CarItem.module.css'
 const CarItem = ({car}) => {
-    const link = `catalogCars/car/${car.id}`;
+    const nav = useNavigate();
     return (
         <div key={car.id} className={styles.listItem}>
             <div className={styles.image} style={{
@@ -12,7 +13,7 @@ const CarItem = ({car}) => {
                 <p>{new Intl.NumberFormat('en-US', {
                     style: 'currency', currency: 'USD',
                 }).format(car.price)}</p>   
-                <a href={link} className = 'link'><button className='btn'>Read More</button></a>
+                <button onClick={()=> nav(`car/${car.id}`)}className='btn'>Read More</button>
             </div>
         </div>
     )
