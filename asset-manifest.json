@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/catalogCars/static/css/main.d197539f.css",
-    "main.js": "/catalogCars/static/js/main.283828db.js",
+    "main.css": "/catalogCars/static/css/main.5110a0ac.css",
+    "main.js": "/catalogCars/static/js/main.7972590d.js",
     "index.html": "/catalogCars/index.html",
-    "main.d197539f.css.map": "/catalogCars/static/css/main.d197539f.css.map",
-    "main.283828db.js.map": "/catalogCars/static/js/main.283828db.js.map"
+    "main.5110a0ac.css.map": "/catalogCars/static/css/main.5110a0ac.css.map",
+    "main.7972590d.js.map": "/catalogCars/static/js/main.7972590d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d197539f.css",
-    "static/js/main.283828db.js"
+    "static/css/main.5110a0ac.css",
+    "static/js/main.7972590d.js"
   ]
 }
