@@ -22,7 +22,7 @@ const CarSearch = ({cars, setCars}) => {
     }
     const reset = (e) => {
         e.preventDefault();
-        setCars(() => [...allCars]);
+        setCars(allCars);
     }
     return (
         <div className={styles.container}>

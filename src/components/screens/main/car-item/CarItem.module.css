@@ -21,3 +21,9 @@
     font-size: 20px;
     margin: 5px auto 5px;
 }
+.buttonsGgroup{
+    display: flex;
+    margin: auto;
+    width: 500px;
+    justify-content: space-between;
+}
