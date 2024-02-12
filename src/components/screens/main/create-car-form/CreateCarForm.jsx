@@ -32,9 +32,6 @@ const CreateCarForm = ({cars, setCars}) => {
             return prev;
         });
     }
-    const returnLastCar = (e) => {
-        e.preventDefault();
-    }
 
     return(
         <form className={styles.form} onSubmit={handleSubmit(createCar)}>
@@ -50,7 +47,6 @@ const CreateCarForm = ({cars, setCars}) => {
                 <button className='btn'>Create</button>
                 <button className='btn' onClick={e => resetCars(e)}>Reset</button>
                 <button className='btn' onClick={e => removeLastAdded(e)}>Remove last added car</button>
-                <button className='btn' onClick={e => returnLastCar(e)}>Return</button>
             </div>
         </form>
     )

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState } from 'react';
 import styles from './CarSearch.module.css';
 import {cars as allCars} from '../cars.data.js'
 const CarSearch = ({cars, setCars}) => {
@@ -18,8 +18,9 @@ const CarSearch = ({cars, setCars}) => {
             return;
         })
         setCars(()=>[...filterCars])
-
+    
     }
+
     const reset = (e) => {
         e.preventDefault();
         setCars(allCars);

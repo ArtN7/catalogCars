@@ -1,70 +1,47 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div>
+    <h1>Сайт: "Каталог автомобилей"</h1>
+    <p>Сайт без тз, тк он предназначен для практики написания сайтов на фреймворке react. Время от времени этот файл будет меняться, потому что в нем буду описывать мои наработки</p>
+    <section>
+        <h2>Описание функционала главной страницы:</h2>
+        <div>
+            <h3>Сортировка автомобилей</h3>
+            <ul>
+                <li>По возрастанию цены</li>
+                <li>По убыванию цены</li>
+                <li>По алфавиту A-Z</li>
+                <li>По алфавиту Z-A</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Создание нового автомобиля</h3>
+            <p>Содержит три поля с именем, ценой и изображением. В поле с изображением вводится ссылка на картинку. А также 3 кнопки:</p>
+            <ul>
+                <li>Create - создает машину по введенным полям. При нажатии происходит валидация значений полей, если ошибка, то под полем она будет указана, если нет - автомобиль будет создан</li>
+                <li>Reset - сбросит(удалит) все созданные автомобили</li>
+                <li>Remove las added car - удалит последний созданный автомобиль</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Поиск автомобиля о названию</h3>
+            <p>Содержит поле ввода имени. Автомобиль можно искать только по полным словам, например, чтобы найти BMW M3, нужно в строке поиска написать что-то одно из: BMW, M3, BMW M3. После нахождения автомобиля, можно ввести новое название, тогда программа сбрасывает поиск и выводит на экрна уже новую найденную машину, если машиин нет, то выведет на экран "Cars not found"</p>
+            <p>Содержит две кнопки:</p>
+            <ul>
+                <li>Search - ищет автомобиль по названию</li>
+                <li>Reset - сбрасывает значение строки, выводит на экран все автомобили</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Карточка автомобиля</h3>
+            <p>Содержит изображение автомобиля, его название, цену и две кнопки:</p>
+            <ul>
+                <li>Delete Car - удаляет автомобиль из списка</li>
+                <li>Read More - переходит на страницу автомобиля с его подробным описанием</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Описание страницы с подробным описанием автомобиля</h2>
+        <p>Страница содержит изображение с большим разрешением, а также описание интерьера, экстерьера и технических характеристик. Также при нажатии на кнопку "Back" идет возврат на главную страницу без перезагрузки</p>
+    </section>
+    <p>P.S. Планирую переделать сортировку автомобилей на быструю сортировку, а также добавить данные в подробное описание автомобиля</p>
+</div>
